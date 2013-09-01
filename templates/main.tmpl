@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SABnzbd</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Styles -->
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
     <link href="static/css/styles.css" rel="stylesheet">
   </head>
 
@@ -22,13 +21,27 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="/">SABnzbd</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/"><i class="icon-list-ul"></i> $T('menu-queue').capitalize</a></li>
+            <li><a href="config"><i class="icon-wrench"></i> $T('menu-config').capitalize</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href=""><i class="icon-plus"></i> Add NZB</a></li>
+            <li><a href=""><i class="icon-cogs"></i> Options</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-question"></i> Help <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://wiki.sabnzbd.org" target="_blank">$T('menu-wiki')</a></li>
+								<li><a href="http://forums.sabnzbd.org" target="_blank">$T('menu-forums')</a></li>
+								<li><a href="http://www.sabnzbd.org/live-chat" target="_blank">$T('menu-irc')</a></li>
+								<li class="divider"></li>
+								<li><a href="https://github.com/BeingTomGreen/sabstrap" target="_blank"><i class="icon-github"></i></i> sabstrap on Github</a></li>
+								<li><a href="http://twitter.com/beingtomgreen" target="_blank"><i class="icon-twitter"></i> @beingtomgreen</a></li>
+							</ul>
+						</li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
