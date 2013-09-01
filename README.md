@@ -37,7 +37,7 @@ When creating issues please make sure you check nobody has reported the bug befo
 
 You follow me on Twitter [@beingtomgreen](https://twitter.com/beingtomgreen) or [email me](mailto:tom@beingtomgreen.com).
 
-Once I get something in place I will create a thread on the [Sabnzbd forums](http://forums.sabnzbd.org/) where people can leave feedback.
+You can also post on the [Sabnzbd forums thred I started](http://forums.sabnzbd.org/viewtopic.php?f=5&t=15367).
 
 ### Thanks & contributors
 
