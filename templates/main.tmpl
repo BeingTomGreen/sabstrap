@@ -12,7 +12,6 @@
   </head>
 
   <body>
-
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -42,24 +41,95 @@
 								<li><a href="http://twitter.com/beingtomgreen" target="_blank"><i class="icon-twitter"></i> @beingtomgreen</a></li>
 							</ul>
 						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-off icon-white"></i> <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Restart</a></li>
+								<li><a href="#">Shutdown</a></li>
+							</ul>
+						</li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
 
     <div class="container">
 
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+        </div>
       </div>
 
-    </div><!-- /.container -->
+
+	<!-- Queue -->
+	<div id="queue" class="container queue" data-bind="with: queue">
+		<div data-bind="toggle: { value: !isEmpty(), effect: 'fade' }, sortable: { data: items, afterMove: moveItem, allowDrop: true }">
+			<div class="wrapper">
+				<div class="item hero-unit">
+					<div class="header">
+						<div class="title">
+						  <h3 data-bind="text: name, click: editName, visible: !editingName()"></h3>
+						  <input data-bind="value: editedName, visible: editingName, hasfocus: editingName" />
+						</div>
+						<div class="tools">
+							<a class="btn btn-mini btn-tiny" href="#" alt="Remove" data-bind="click: \$parent.removeItem"><i class="icon-trash"></i></a>
+							<a class="btn btn-mini btn-tiny btn-move" href="#" alt="Move"><i class="icon-move"></i></a>
+							<a class="btn btn-mini btn-tiny" href="#" data-bind="click: toggleMore, attr: { 'alt': showMore() ? 'Show Less' : 'Show More' }"><i data-bind="attr: { 'class': showMore() ? 'icon-chevron-up' : 'icon-chevron-down' }"></i></a>
+						</div>
+					</div>
+					<div class="info">
+						<span data-bind="text: status"></span>&nbsp;
+						<span data-bind="visible: hasData">
+							&#8212;&nbsp;
+							<span data-bind="text: downloadedMB"></span> of <span data-bind="text: totalMB"></span> MB
+						</span>
+					</div>
+					<div class="progress-container" style="display: none;" data-bind="toggle: { value: showProgressBar, effect: 'fade' }">
+						<div data-bind="attr: { 'class': isDownloading() ? 'progress progress-striped active' : 'progress' }">
+							<div class="bar" data-bind="attr: { 'style': 'width: ' + percentage() + '%;' }">
+								<div class="indicator pull-right"><span data-bind="text: percentage"></span>%</div>
+							</div>
+						</div>
+					</div>
+					<div data-bind="toggle: { value: showMore, effect: 'slide' }">
+						<a class="btn btn-small" href="#" data-bind="click: toggleState"><i data-bind="attr: { 'class': isPaused() ? 'icon-play' : 'icon-pause' }"></i> <span data-bind="text: isPaused() ? 'Resume' : 'Pause'"></span></a>
+						<select data-bind="value: category, options: \$parent.categories"></select>
+						<select data-bind="value: priority, options: \$parent.priorities, optionsValue: 'value', optionsText: 'name'"></select>
+						<select data-bind="value: option, options: \$parent.options, optionsValue: 'value', optionsText: 'name'"></select>
+						<select data-bind="value: script, options: \$parent.scripts, visible: \$parent.hasScripts"></select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="info" data-bind="toggle: { value: isEmpty(), effect: 'fade' }">
+			<p data-bind="visible: isFirstLoad()"><i class="icon-spinner icon-spin"></i> Loading...</p>
+			<p data-bind="visible: !isFirstLoad()">Your queue is empty.</p>
+		</div>
+		<div class="pagination pagination-small" data-bind="visible: hasMultiplePages">
+			<ul data-bind="foreach: pages">
+				<li data-bind="attr: { 'class': state }"><a href="#" data-bind="click: \$parent.selectPage, text: title"></a></li>
+			</ul>
+		</div>
+	</div>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- JavaScript -->
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
   </body>
