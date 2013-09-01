@@ -13,7 +13,7 @@ Rather than hacking on Plush (the default theme), I am going to rewrite from the
 
 * [Download the latest version](https://github.com/BeingTomGreen/sabstrap/archive/master.zip)
 * Extract the `sabstrap` folder into `/path/to/sabnzbd/interfaces/sabstrap`
-* Select the sabstrap from the available skins (`config->general->skin`)
+* Select sabstrap from the available skins (`config->general->skin`)
 
 Alternatively, you can use [`git clone`](https://www.atlassian.com/git/tutorial/git-basics#!clone) directly from GitHub.
 
