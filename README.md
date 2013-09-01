@@ -41,6 +41,12 @@ You follow me on Twitter [@beingtomgreen](https://twitter.com/beingtomgreen) or 
 
 Once I get something in place I will create a thread on the [Sabnzbd forums](http://forums.sabnzbd.org/) where people can leave feedback.
 
+### Thanks & contributors
+
+I found [Arno Fortelny's](https://twitter.com/aforty) [Knockstrap theme](https://github.com/aforty/sabnzbd-knockstrap) invaluable as documentation for creating new themes is scarce!
+
+Big love to [Mark (mdo)](http://twitter.com/mdo), [Jacob (fat)](http://twitter.com/fat) [et al](https://github.com/twbs/bootstrap/graphs/contributors) for creating and maintaing [Twitter Bootstrap](https://github.com/twbs/bootstrap).
+
 ### License
 
 This is open-sourced software licensed under the [MIT license](http://beingtomgreen.mit-license.org/).
