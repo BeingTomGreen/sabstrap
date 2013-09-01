@@ -31,6 +31,10 @@ If you think you have found any kind of issue with sabstrap the best thing to do
 
 When creating issues please make sure you check nobody has reported the bug before, if they have comment on that issue instead of creating a new one!
 
+### Todo
+
+- Add code to check if jQuery is loaded (check H5BP) as it is possible SABnzbd isn't connected to the net..
+
 ### Contact me
 
 You follow me on Twitter [@beingtomgreen](https://twitter.com/beingtomgreen) or [email me](mailto:tom@beingtomgreen.com).
