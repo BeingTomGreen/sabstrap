@@ -1,6 +1,10 @@
 sabstrap
 ==================
 
+### WARNING
+
+This is still under development and is probably missing some/most/all of the features normal users need!
+
 ### What is this?
 
 sabstrap is a simple theme for [SABnzbd](http://sabnzbd.org/), designed to be clean and easy to use on a any device.
