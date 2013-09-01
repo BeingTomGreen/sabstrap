@@ -7,6 +7,8 @@ This is still under development and is probably missing some/most/all of the fea
 
 ### What is this?
 
+![sabstrap v1](http://i.imgur.com/JGwpgOz.png)
+
 sabstrap is a simple theme for [SABnzbd](http://sabnzbd.org/), designed to be clean and easy to use on a any device.
 
 I will be using [Bootstrap (v3)](http://getbootstrap.com/) and will try to use only built-in functionality as much as possible.
