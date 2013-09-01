@@ -29,7 +29,7 @@ When creating issues please make sure you check nobody has reported the bug befo
 
 ### Contact me
 
-You follow me on Twitter [@beingtomgreen](https://twitter.com/beingtomgreen) or [email me](tom@beingtomgreen.com).
+You follow me on Twitter [@beingtomgreen](https://twitter.com/beingtomgreen) or [email me](mailto:tom@beingtomgreen.com).
 
 Once I get something in place I will create a thread on the [Sabnzbd forums](http://forums.sabnzbd.org/) where people can leave feedback.
 
