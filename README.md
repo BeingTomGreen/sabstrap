@@ -30,15 +30,15 @@ I will not go out of my way to support older browsers. Generally if [Bootstrap (
 
 If somebody wants to send a pull request adding support for older versions thats fine.
 
-If you think you have found any kind of issue with sabstrap the best thing to do is [create an issue](https://github.com/BeingTomGreen/sabstrap/issues/new).
+If you think you have found any kind of issue with sabstrap the best thing to do is [create a new issue](https://github.com/BeingTomGreen/sabstrap/issues/new).
 
-When creating issues please make sure you check nobody has reported the bug before, if they have comment on that issue instead of creating a new one!
+When creating issues please make sure you check nobody has already reported the issue, if they have comment on that issue instead of creating a new one!
 
 ### Contact me
 
 You follow me on Twitter [@beingtomgreen](https://twitter.com/beingtomgreen) or [email me](mailto:tom@beingtomgreen.com).
 
-You can also post on the [Sabnzbd forums thread I started](http://forums.sabnzbd.org/viewtopic.php?f=5&t=15367).
+You can also post on the [Sabnzbd forum thread I started](http://forums.sabnzbd.org/viewtopic.php?f=5&t=15367).
 
 ### Thanks & contributors
 
